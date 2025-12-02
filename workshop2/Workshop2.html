@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taufiq Wani - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Taufiq Wani</h1>
+      <p>Mixologist • Designer • Creator</p>
+      <button class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="main-nav">
+        <button onclick="openSection('home')">Home</button>
+        <button onclick="openSection('about')">About</button>
+        <button onclick="openSection('projects')">Projects</button>
+        <button onclick="openSection('contact')">Contact</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+ <section id="home" class="content-section active">
+  <div class="video-container">
+    <video autoplay muted loop id="bg-video">
+      <source src="videos/videofile.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay">
+      <h2>Welcome to My Portfolio</h2>
+      <p>Explore my work and creativity</p>
+    </div>
+  </div>
+</section>
+
+    <section id="about" class="content-section">
+      <h2>About Me</h2>
+      <p>I'm Taufiq Wani — a creator who loves design, mixology, and building meaningful digital experiences. This portfolio showcases my work and creativity.</p>
+      <div class="about-gallery">
+        <img src="https://via.placeholder.com/200" alt="Image 1">
+        <img src="https://via.placeholder.com/200" alt="Image 2">
+        <img src="https://via.placeholder.com/200" alt="Image 3">
+      </div>
+    </section>
+
+    <section id="projects" class="content-section">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <p>Project description goes here.</p>
+        </div>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>Project description goes here.</p>
+        </div>
+        <div class="project-card">
+          <h3>Project 3</h3>
+          <p>Project description goes here.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="content-section">
+      <h2>Contact</h2>
+      <form class="contact-form">
+        <label>Name</label>
+        <input type="text" placeholder="Your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Your email" required>
+
+        <label>Message</label>
+        <textarea placeholder="Write your message here" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Taufiq Wani. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
